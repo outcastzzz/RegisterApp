@@ -60,7 +60,7 @@ class LoginFragment : Fragment() {
                 if (errorMessage != null) {
                     Toast.makeText(
                         requireActivity().applicationContext,
-                        "Error! Login or password is empty",
+                        "Error! Invalid login or password",
                         Toast.LENGTH_SHORT
                     ).show()
                 }
