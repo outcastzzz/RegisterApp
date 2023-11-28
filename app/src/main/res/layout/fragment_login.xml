@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_auth"
+    tools:context=".presentation.LoginFragment">
+
+    <EditText
+        android:id="@+id/editTextLogin"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/background_btn"
+        android:hint="Login"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textColorHint="#CCCACA" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/editTextLogin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_btn"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textColorHint="#CCCACA" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_btn"
+        android:text="Login" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/toast_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
